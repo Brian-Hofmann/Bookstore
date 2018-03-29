@@ -122,6 +122,7 @@
       foreach ($myAuthorDao->getAll() as $author) {
          echo $author->FirstName;
          echo $author->LastName;
+         echo $author->AuthorID;
    
          
          echo "<br>";

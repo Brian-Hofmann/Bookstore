@@ -27,4 +27,6 @@ class Billing_AddressDao {
        $ba->CustomerID = $myrow["CustomerID"];
        unset($stmt);
     }
+    
+    //Test
 }

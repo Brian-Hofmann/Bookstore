@@ -31,7 +31,7 @@
 <div class="jumbotron">
   <div class="container text-center">
     <h1>Online Store</h1>      
-    <p>Mission, Vission & Values</p>
+    <p>Mission, Vision & Values</p>
   </div>
 </div>
 
@@ -117,19 +117,26 @@
 
 <footer class="container-fluid text-center">
   <p><?php
+
       require '../dao/AuthorDao.php';
       $myAuthorDao = new AuthorDao();
-      foreach ($myAuthorDao->getAll() as $author) {
-         echo $author->FirstName;
-         echo $author->LastName;
-         echo $author->AuthorID;
-   
-         
-         echo "<br>";
+      echo "<table>";
+
+      
+      foreach($myAuthorDao->getAll() as $author) {
+         echo "<tr>";
+         echo "<td>".$author->firstName."</td>";
+         //echo "Hello";
+         echo "</tr>";
       }
+      echo "</table>";
+         
+      
+      
+         
+         
   
   ?></p>
-Hello  
   <form class="form-inline">Get deals:
     <input type="email" class="form-control" size="50" placeholder="Email Address">
     <button type="button" class="btn btn-danger">Sign Up</button>

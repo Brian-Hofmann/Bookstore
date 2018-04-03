@@ -7,17 +7,17 @@
  */
 
 /**
- * Description of Author
+ * Description of Customer
  *
  * @author codyh
  */
-class Author {
-   var $authorID;
+class Customer {
+   var $customerID;
    var $firstName;
    var $lastName;
    
-   function getAuthorID() {
-      return $this->authorID;
+   function getCustomerID() {
+      return $this->customerID;
    }
 
    function getFirstName() {
@@ -28,8 +28,8 @@ class Author {
       return $this->lastName;
    }
 
-   function setAuthorID($authorID) {
-      $this->authorID = $authorID;
+   function setCustomerID($customerID) {
+      $this->customerID = $customerID;
    }
 
    function setFirstName($firstName) {
